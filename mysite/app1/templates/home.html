@@ -6,14 +6,12 @@
 <body>
 欢迎光临Cindy的收纳窗
 <table border="1">
+{% for line in obj %}
 <tr>
-<td>row 1, cell 1</td>
-<td>row 1, cell 2</td>
+<td>{{line.name}}</td>
+<td>{{line.location}}</td>
 </tr>
-<tr>
-<td>row 2, cell 1</td>
-<td>row 2, cell 2</td>
-</tr>
+{% endfor %}
 </table>
 </body>
 </html>
