@@ -6,10 +6,22 @@
 <body>
 欢迎光临Cindy的收纳窗
 <table border="1">
+<tr>
+<td>{{'NAME'}}</td>
+<td>{{'MODEL'}}</td>
+<td>{{'CATEGORY'}}</td>
+<td>{{'LOCATION'}}</td>
+<td>{{'TIME OF PURCHASE'}}</td>
+<td>{{'PLACE OF PURCHASE'}}</td>
+</tr>
 {% for line in obj %}
 <tr>
 <td>{{line.name}}</td>
+<td>{{line.type}}</td>
+<td>{{line.category}}</td>
 <td>{{line.location}}</td>
+<td>{{line.buy_date}}</td>
+<td>{{line.buy_address}}</td>
 </tr>
 {% endfor %}
 </table>
